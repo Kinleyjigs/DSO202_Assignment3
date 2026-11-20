@@ -1,0 +1,27 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+1299,269.12,4528.44,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+A3 - Normal month,Asia Pacific (Singapore),API tasks (baseline),AWS Fargate,0,35.98,431.76,USD,,"Operating system (Linux), CPU Architecture (ARM), Average duration (730 hours), Number of tasks or pods (2 per month), Amount of ephemeral storage allocated for Amazon ECS (20 GB), Amount of memory allocated (1 GB)"
+A3 - Normal month,Asia Pacific (Singapore),ALB,Application Load Balancer,0,19.57,234.84,USD,,Number of Application Load Balancers (1)
+A3 - Normal month,Asia Pacific (Singapore),NAT x2 + public IPs,Public IPv4 Address,0,14.6,175.20,USD,,"Number of In-use public IPv4 addresses (4), Number of Idle public IPv4 addresses (0)"
+A3 - Normal month,Asia Pacific (Singapore),NAT x2 + public IPs,Network Address Translation (NAT) Gateway,0,87.32,1047.84,USD,,"Number of Regional NAT Gateways (1), Number of Availability Zones Regional NAT Gateways is active in (1), Number of NAT Gateways (2)"
+A3 - Normal month,Asia Pacific (Singapore),Database Multi-AZ,Amazon RDS for PostgreSQL,1299,40.08,1779.96,USD,,"Storage amount (50 GB), Storage volume (General Purpose SSD (gp3)), Nodes (1), Instance Type (db.t4g.medium), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (All Upfront)"
+A3 - Normal month,Asia Pacific (Singapore),,Amazon CloudFront,0,20.98,251.76,USD,,"Data transfer out to internet (100 GB per month), Data transfer out to origin (0 GB per month), Number of requests (HTTPS) (8400000 per month)"
+A3 - Normal month,Asia Pacific (Singapore),WAF on CloudFront,AWS Web Application Firewall (WAF),0,14.04,168.48,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (1 per month), Number of Rules added per Web ACL (2 per month), Number of Rule Groups per Web ACL (0 per month), Number of Rules inside each Rule Group (0 per month), Number of Managed Rule Groups per Web ACL (2 per month)"
+A3 - Normal month,Asia Pacific (Singapore),Submissions bucket,S3 Standard,0,3.1,37.20,USD,,"S3 Standard storage (120 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (5000), GET, SELECT, and all other requests from S3 Standard (200000), Data returned by S3 Select (0 GB per month), Data scanned by S3 Select (0 GB per month)"
+A3 - Normal month,Asia Pacific (Singapore),Submissions bucket,S3 Standard - Infrequent Access,0,1.72,20.64,USD,,"S3 Standard-IA storage (120 GB per month), PUT, COPY, POST, LIST requests to S3 Standard-IA (1000), GET, SELECT, and all other requests from S3 Standard-IA (5000), Lifecycle Transition requests (5), Data retrievals (5 GB per month), Data returned by S3 Select (0 GB per month), Data scanned by S3 Select (0 GB per month)"
+A3 - Normal month,Asia Pacific (Singapore),Submissions bucket,S3 Glacier Deep Archive,0,2.08,24.96,USD,,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (1000 GB per month), PUT, COPY, POST, LIST requests to S3 Glacier Deep Archive (1000), Data retrievals (Bulk) (0 GB per month), Data retrievals (Standard) (0 GB per month), Restore requests (Bulk) (0), Restore requests (Standard) (0), Lifecycle Transitions into S3 Glacier Deep Archive (0)"
+A3 - Normal month,Asia Pacific (Singapore),Submissions bucket,Data Transfer,0,12,144.00,USD,,"DT Inbound: Internet (0 GB per month), DT Outbound: Internet (100 GB per month)"
+A3 - Normal month,Asia Pacific (Singapore),Logs + alarms,Amazon CloudWatch,0,13.645,163.74,USD,,"Number of mobile OTEL events and spans or spans per visit (70), Mobile sampling rate (1), Number of Metrics (includes detailed and custom metrics) (20), Standard Logs: Data Ingested (10 GB), Infrequent Access Logs: Data Ingested (0 GB), Standard Logs Delivered to CloudWatch Logs (0 GB), Infrequent Access Logs Delivered to CloudWatch Logs (0 GB), Logs Delivered to S3: Data Ingested (0 GB), Number of Dashboards (0), Number of Standard Resolution Alarm Metrics (6), Number of High Resolution Alarm Metrics (0), Number of composite alarms (0), Number of alarms defined with a Metrics Insights query (0), Average number of metrics scanned by each Metrics Insights query (0)"
+A3 - Normal month,Asia Pacific (Singapore),DB backups 5y,RDS Backup,0,2.1,25.20,USD,,"Estimated annual increase in primary data (%) (0.5), Estimated daily change of primary data (%) (0.005), Amount of primary data to be backed up (20 GB), Continuous backups warm retention period (0 Days), Hourly backups warm retention period (0 Days), Daily backups warm retention period (35 Days), Weekly backups warm retention period (0 Weeks), Monthly backups warm retention period (12 Months)"
+A3 - Normal month,Asia Pacific (Singapore),KMS key,AWS Key Management Service,0,1.9,22.80,USD,,"Number of customer managed Customer Master Keys (CMK) (1), Number of symmetric requests (300000), Number of asymmetric requests except RSA 2048 (0), Number of asymmetric requests involving RSA 2048 (0), Number of ECC GenerateDataKeyPair requests (0), Number of RSA GenerateDataKeyPair requests (0)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
