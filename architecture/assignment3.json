@@ -8,9 +8,9 @@
     "builtAt": "2026-11-08T10:26:50.924Z",
     "draftVersion": 2
   },
-  "savedAt": "2026-11-18T14:30:00.000Z",
+  "savedAt": "2026-11-19T21:04:19.487Z",
   "state": {
-    "draftName": "assignment2",
+    "draftName": "assignment3",
     "nodes": [
       {
         "id": "vpc",
@@ -47,48 +47,48 @@
           "y": 40
         },
         "data": {
-          "label": "Public subnet A (us-east-1a)",
+          "label": "Public subnet A (ap-southeast-1a)",
           "boundaryType": "public_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.1.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.0.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.1.0",
+              "ip": "10.0.0.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.1.1",
+              "ip": "10.0.0.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.1.2",
+              "ip": "10.0.0.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.1.3",
+              "ip": "10.0.0.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.1.255",
-              "offset": 255,
+              "ip": "10.0.31.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.1.4",
-            "end": "10.0.1.254"
+            "start": "10.0.0.4",
+            "end": "10.0.31.254"
           },
           "az": "AZ-A",
           "routeTable": "exam-public-rt (0.0.0.0/0 -> exam-igw)"
@@ -114,48 +114,48 @@
           "y": 40
         },
         "data": {
-          "label": "Public subnet B (us-east-1b)",
+          "label": "Public subnet B (ap-southeast-1b)",
           "boundaryType": "public_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.2.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.32.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.2.0",
+              "ip": "10.0.32.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.2.1",
+              "ip": "10.0.32.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.2.2",
+              "ip": "10.0.32.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.2.3",
+              "ip": "10.0.32.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.2.255",
-              "offset": 255,
+              "ip": "10.0.63.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.2.4",
-            "end": "10.0.2.254"
+            "start": "10.0.32.4",
+            "end": "10.0.63.254"
           },
           "az": "AZ-B",
           "routeTable": "exam-public-rt (0.0.0.0/0 -> exam-igw)"
@@ -181,48 +181,48 @@
           "y": 290
         },
         "data": {
-          "label": "Private app subnet A (us-east-1a)",
+          "label": "Private app subnet A (ap-southeast-1a)",
           "boundaryType": "private_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.11.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.64.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.11.0",
+              "ip": "10.0.64.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.11.1",
+              "ip": "10.0.64.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.11.2",
+              "ip": "10.0.64.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.11.3",
+              "ip": "10.0.64.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.11.255",
-              "offset": 255,
+              "ip": "10.0.95.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.11.4",
-            "end": "10.0.11.254"
+            "start": "10.0.64.4",
+            "end": "10.0.95.254"
           },
           "az": "AZ-A",
           "routeTable": "exam-app-rt-a (0.0.0.0/0 -> NAT A)"
@@ -248,48 +248,48 @@
           "y": 290
         },
         "data": {
-          "label": "Private app subnet B (us-east-1b)",
+          "label": "Private app subnet B (ap-southeast-1b)",
           "boundaryType": "private_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.12.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.96.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.12.0",
+              "ip": "10.0.96.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.12.1",
+              "ip": "10.0.96.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.12.2",
+              "ip": "10.0.96.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.12.3",
+              "ip": "10.0.96.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.12.255",
-              "offset": 255,
+              "ip": "10.0.127.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.12.4",
-            "end": "10.0.12.254"
+            "start": "10.0.96.4",
+            "end": "10.0.127.254"
           },
           "az": "AZ-B",
           "routeTable": "exam-app-rt-b (0.0.0.0/0 -> NAT B)"
@@ -315,48 +315,48 @@
           "y": 540
         },
         "data": {
-          "label": "Private DB subnet A (us-east-1a)",
+          "label": "Private DB subnet A (ap-southeast-1a)",
           "boundaryType": "private_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.21.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.128.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.21.0",
+              "ip": "10.0.128.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.21.1",
+              "ip": "10.0.128.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.21.2",
+              "ip": "10.0.128.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.21.3",
+              "ip": "10.0.128.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.21.255",
-              "offset": 255,
+              "ip": "10.0.159.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.21.4",
-            "end": "10.0.21.254"
+            "start": "10.0.128.4",
+            "end": "10.0.159.254"
           },
           "az": "AZ-A",
           "routeTable": "exam-db-rt (local only - no internet)"
@@ -382,48 +382,48 @@
           "y": 540
         },
         "data": {
-          "label": "Private DB subnet B (us-east-1b)",
+          "label": "Private DB subnet B (ap-southeast-1b)",
           "boundaryType": "private_subnet",
           "width": 560,
           "height": 210,
-          "cidr": "10.0.22.0/24",
-          "totalAddresses": 256,
-          "usableHosts": 251,
+          "cidr": "10.0.160.0/19",
+          "totalAddresses": 8192,
+          "usableHosts": 8187,
           "reservedAddresses": [
             {
-              "ip": "10.0.22.0",
+              "ip": "10.0.160.0",
               "offset": 0,
               "role": "Network Address",
               "description": "First address in the subnet. Identifies the network itself."
             },
             {
-              "ip": "10.0.22.1",
+              "ip": "10.0.160.1",
               "offset": 1,
               "role": "VPC Router",
               "description": "Reserved by AWS for the default VPC router / subnet gateway."
             },
             {
-              "ip": "10.0.22.2",
+              "ip": "10.0.160.2",
               "offset": 2,
               "role": "Amazon-Provided DNS",
               "description": "Reserved by AWS for the DNS resolver (Route 53 Resolver / AmazonProvidedDNS)."
             },
             {
-              "ip": "10.0.22.3",
+              "ip": "10.0.160.3",
               "offset": 3,
               "role": "AWS Future Use",
               "description": "Reserved by AWS for potential future internal functionality."
             },
             {
-              "ip": "10.0.22.255",
-              "offset": 255,
+              "ip": "10.0.191.255",
+              "offset": 8191,
               "role": "Network Broadcast Address",
               "description": "Last address in the subnet. AWS does not support broadcast in a VPC, but reserves the address."
             }
           ],
           "usableRange": {
-            "start": "10.0.22.4",
-            "end": "10.0.22.254"
+            "start": "10.0.160.4",
+            "end": "10.0.191.254"
           },
           "az": "AZ-B",
           "routeTable": "exam-db-rt (local only - no internet)"
@@ -449,7 +449,7 @@
           "y": 75
         },
         "data": {
-          "label": "alb-sg: 443 from internet",
+          "label": "alb-sg: 80 from CloudFront only",
           "boundaryType": "security_group",
           "width": 190,
           "height": 160,
@@ -479,7 +479,7 @@
           "y": 75
         },
         "data": {
-          "label": "alb-sg: 443 from internet",
+          "label": "alb-sg: 80 from CloudFront only",
           "boundaryType": "security_group",
           "width": 190,
           "height": 160,
@@ -587,9 +587,9 @@
           "y": 575
         },
         "data": {
-          "label": "db-sg: 5432 from app-sg",
+          "label": "db-sg: 5432 from app-sg + RDS Proxy",
           "boundaryType": "security_group",
-          "width": 190,
+          "width": 530,
           "height": 160,
           "securityGroupRules": {
             "inbound": [
@@ -600,20 +600,28 @@
                   "type": "securityGroup",
                   "securityGroupId": "sg-app"
                 }
+              },
+              {
+                "protocol": "SQL",
+                "portRange": "5432",
+                "source": {
+                  "type": "securityGroup",
+                  "securityGroupId": "sg-db"
+                }
               }
             ],
             "outbound": []
           }
         },
         "style": {
-          "width": 190,
+          "width": 530,
           "height": 160
         },
         "draggable": true,
         "selectable": true,
         "zIndex": -2,
         "measured": {
-          "width": 190,
+          "width": 530,
           "height": 160
         },
         "selected": false
@@ -626,7 +634,7 @@
           "y": 575
         },
         "data": {
-          "label": "db-sg: 5432 from app-sg",
+          "label": "db-sg: 5432 from app-sg + RDS Proxy",
           "boundaryType": "security_group",
           "width": 190,
           "height": 160,
@@ -638,6 +646,14 @@
                 "source": {
                   "type": "securityGroup",
                   "securityGroupId": "sg-app"
+                }
+              },
+              {
+                "protocol": "SQL",
+                "portRange": "5432",
+                "source": {
+                  "type": "securityGroup",
+                  "securityGroupId": "sg-db"
                 }
               }
             ],
@@ -666,7 +682,7 @@
         },
         "data": {
           "serviceId": "user",
-          "label": "Student - exam (start W1)",
+          "label": "Students in exam hall (shared campus IP) - W1",
           "category": "Client / Ingress",
           "health": "healthy",
           "az": "Edge / Global",
@@ -674,7 +690,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "3,000 students start within 5 min. Autosave = 3,000 / 30 s = 100 req/s, mostly from ONE campus public IP."
         },
         "zIndex": 10,
         "measured": {
@@ -684,7 +701,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-student-upload",
@@ -713,7 +731,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-tutor",
@@ -742,7 +761,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-route53",
@@ -761,7 +781,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: global managed service (100% SLA)."
         },
         "zIndex": 10,
         "measured": {
@@ -771,7 +792,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-cloudfront",
@@ -790,7 +812,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: global edge network. PriceClass_200 includes India edges close to Bhutan."
         },
         "zIndex": 10,
         "measured": {
@@ -800,7 +823,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-waf",
@@ -811,7 +835,7 @@
         },
         "data": {
           "serviceId": "waf",
-          "label": "AWS WAF (on CloudFront)",
+          "label": "AWS WAF (campus IP exempt from rate limit)",
           "category": "Security, Identity & Compliance",
           "health": "healthy",
           "az": "Edge / Global",
@@ -823,9 +847,12 @@
           "customConfig": {
             "rules": [
               "AWS managed common rules",
-              "rate limit per IP"
+              "AWS managed known bad inputs",
+              "ALLOW campus IP set (exempt from rate limit)  [A3 change C8]",
+              "rate limit 2,000 req / 5 min per IP for all other IPs"
             ]
-          }
+          },
+          "notes": "BOTTLENECK FIXED (C8): A2 limit of 2,000 req/5 min per IP would block the exam hall (about 30,000 req/5 min from one shared campus IP)."
         },
         "zIndex": 10,
         "measured": {
@@ -835,7 +862,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-s3-web",
@@ -857,7 +885,8 @@
           "height": 98,
           "customConfig": {
             "publicAccess": "blocked (CloudFront OAC only)"
-          }
+          },
+          "notes": "SPOF removed: S3 is regional and stores data across AZs."
         },
         "zIndex": 10,
         "measured": {
@@ -867,7 +896,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-cognito",
@@ -886,7 +916,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: regional managed service across AZs."
         },
         "zIndex": 10,
         "measured": {
@@ -896,7 +927,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-alb-a",
@@ -918,7 +950,8 @@
           "height": 98,
           "securityGroupIds": [
             "sg-alb"
-          ]
+          ],
+          "notes": "SPOF removed: one ALB with nodes in both AZs; unhealthy targets removed after 2 x 10 s checks."
         },
         "zIndex": 10,
         "measured": {
@@ -928,7 +961,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-alb-b",
@@ -950,7 +984,8 @@
           "height": 98,
           "securityGroupIds": [
             "sg-alb-b"
-          ]
+          ],
+          "notes": "SPOF removed: one ALB with nodes in both AZs; unhealthy targets removed after 2 x 10 s checks."
         },
         "zIndex": 10,
         "measured": {
@@ -960,7 +995,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-nat-a",
@@ -979,7 +1015,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: one NAT per AZ, app subnet A routes only to its own NAT. Kept 2 (not 1) on purpose - a single NAT would cut off the healthy AZ (C13)."
         },
         "zIndex": 10,
         "measured": {
@@ -989,7 +1026,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-nat-b",
@@ -1008,7 +1046,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: one NAT per AZ, app subnet B routes only to its own NAT. Kept 2 (not 1) on purpose - a single NAT would cut off the healthy AZ (C13)."
         },
         "zIndex": 10,
         "measured": {
@@ -1018,7 +1057,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-ecs-a",
@@ -1029,7 +1069,7 @@
         },
         "data": {
           "serviceId": "ecs",
-          "label": "API on ECS Fargate (AZ-a)",
+          "label": "API on ECS Fargate ARM64 (AZ-a)",
           "category": "Compute",
           "health": "healthy",
           "az": "AZ-A",
@@ -1048,12 +1088,16 @@
             "cpu": "512",
             "memory": "1024",
             "containerPort": 8080,
-            "image": "ECR exam-api:latest",
-            "desiredCount": "2 per AZ (4 total)",
-            "autoScaling": "4-20 tasks; scale up 15 min before each exam; CPU target 60%",
+            "image": "ECR exam-api:<git sha> (linux/arm64)",
+            "desiredCount": "Normal: 1 per AZ (2 total). Exam days: 4 per AZ (8 total)",
+            "autoScaling": "2-20 tasks; scheduled to min 8 ONLY on exam days [C3]; CPU target 60%",
             "assignPublicIp": "DISABLED",
-            "az": "us-east-1a"
-          }
+            "az": "ap-southeast-1a",
+            "cpuArchitecture": "ARM64 (Graviton)  [C2]",
+            "pricing": "Baseline 2 tasks covered by 1-year Compute Savings Plan; burst On-Demand [C4]",
+            "dbConnections": "psycopg_pool connection pool, 5 per worker (reused, not one per request) [C6]"
+          },
+          "notes": "SPOF removed: tasks in both AZs; on exam days one AZ alone (4 tasks + auto scaling) carries the peak."
         },
         "zIndex": 10,
         "measured": {
@@ -1063,7 +1107,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-ecs-b",
@@ -1074,7 +1119,7 @@
         },
         "data": {
           "serviceId": "ecs",
-          "label": "API on ECS Fargate (AZ-b)",
+          "label": "API on ECS Fargate ARM64 (AZ-b)",
           "category": "Compute",
           "health": "healthy",
           "az": "AZ-B",
@@ -1093,12 +1138,16 @@
             "cpu": "512",
             "memory": "1024",
             "containerPort": 8080,
-            "image": "ECR exam-api:latest",
-            "desiredCount": "2 per AZ (4 total)",
-            "autoScaling": "4-20 tasks; scale up 15 min before each exam; CPU target 60%",
+            "image": "ECR exam-api:<git sha> (linux/arm64)",
+            "desiredCount": "Normal: 1 per AZ (2 total). Exam days: 4 per AZ (8 total)",
+            "autoScaling": "2-20 tasks; scheduled to min 8 ONLY on exam days [C3]; CPU target 60%",
             "assignPublicIp": "DISABLED",
-            "az": "us-east-1b"
-          }
+            "az": "ap-southeast-1b",
+            "cpuArchitecture": "ARM64 (Graviton)  [C2]",
+            "pricing": "Baseline 2 tasks covered by 1-year Compute Savings Plan; burst On-Demand [C4]",
+            "dbConnections": "psycopg_pool connection pool, 5 per worker (reused, not one per request) [C6]"
+          },
+          "notes": "SPOF removed: tasks in both AZs; on exam days one AZ alone (4 tasks + auto scaling) carries the peak."
         },
         "zIndex": 10,
         "measured": {
@@ -1108,7 +1157,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-rds-a",
@@ -1119,7 +1169,7 @@
         },
         "data": {
           "serviceId": "rds",
-          "label": "RDS PostgreSQL PRIMARY (AZ-a)",
+          "label": "RDS PostgreSQL PRIMARY (AZ-a) - RI",
           "category": "Databases",
           "health": "healthy",
           "az": "AZ-A",
@@ -1137,9 +1187,11 @@
             "multiAz": true,
             "encrypted": "KMS",
             "backupRetentionDays": 7,
-            "pointInTimeRestore": true,
-            "publiclyAccessible": false
-          }
+            "pointInTimeRestore": "yes, 7 days (RPO 5 min)  [C9]",
+            "publiclyAccessible": false,
+            "pricing": "1-year Reserved Instance (Multi-AZ)  [C5]"
+          },
+          "notes": "SPOF removed by Multi-AZ standby (failover ~1-2 min, RPO ~0). BOTTLENECK: connections/CPU at peak - fixed by API connection pool (C6), proven in load test."
         },
         "zIndex": 10,
         "measured": {
@@ -1149,7 +1201,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-rds-b",
@@ -1178,8 +1231,9 @@
             "multiAz": true,
             "encrypted": "KMS",
             "backupRetentionDays": 7,
-            "pointInTimeRestore": true,
-            "publiclyAccessible": false
+            "pointInTimeRestore": "yes, 7 days (RPO 5 min)  [C9]",
+            "publiclyAccessible": false,
+            "pricing": "1-year Reserved Instance (Multi-AZ)  [C5]"
           },
           "notes": "Multi-AZ standby: every write is copied here instantly; takes over automatically if AZ-a fails."
         },
@@ -1191,7 +1245,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-igw",
@@ -1210,7 +1265,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: horizontally scaled, redundant AWS-managed gateway."
         },
         "zIndex": 10,
         "measured": {
@@ -1220,7 +1276,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-s3-files",
@@ -1231,7 +1288,7 @@
         },
         "data": {
           "serviceId": "s3",
-          "label": "S3 submissions bucket (lifecycle 5 years)",
+          "label": "S3 submissions (IA 90d, Deep Archive 1y, delete 5y)",
           "category": "Storage",
           "health": "healthy",
           "az": "Edge / Global",
@@ -1247,10 +1304,11 @@
             "maxUpload": "50 MB (presigned URL)",
             "lifecycle": [
               "Standard-IA after 90 days",
-              "Glacier after 1 year",
+              "Glacier Deep Archive after 1 year  [C10]",
               "delete after 5 years"
             ]
-          }
+          },
+          "notes": "SPOF removed: regional, 11 nines durability. Files kept 5 years."
         },
         "zIndex": 10,
         "measured": {
@@ -1260,7 +1318,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-lambda-notify",
@@ -1304,7 +1363,8 @@
               "ses:SendEmail",
               "ses:SendRawEmail"
             ]
-          }
+          },
+          "notes": "SPOF removed: regional; 2 async retries then DLQ."
         },
         "zIndex": 10,
         "measured": {
@@ -1314,7 +1374,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-ses",
@@ -1333,7 +1394,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF ACCEPTED: if SES is down only the email is delayed - the file is already safe in S3."
         },
         "zIndex": 10,
         "measured": {
@@ -1343,7 +1405,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-sqs-mark",
@@ -1362,7 +1425,8 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "notes": "SPOF removed: regional queue; DLQ after 3 failed tries."
         },
         "zIndex": 10,
         "measured": {
@@ -1372,7 +1436,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-lambda-mark",
@@ -1383,7 +1448,7 @@
         },
         "data": {
           "serviceId": "lambda",
-          "label": "Lambda MCQ auto-marker",
+          "label": "Lambda MCQ auto-marker (max concurrency 5)",
           "category": "Compute",
           "health": "healthy",
           "az": "Edge / Global",
@@ -1415,7 +1480,7 @@
                       "sqs:DeleteMessage",
                       "sqs:GetQueueAttributes"
                     ],
-                    "Resource": "arn:aws:sqs:us-east-1:000000000000:marking-queue"
+                    "Resource": "arn:aws:sqs:ap-southeast-1:000000000000:marking-queue"
                   },
                   {
                     "Effect": "Allow",
@@ -1453,9 +1518,10 @@
               "logs:PutLogEvents"
             ],
             "eventSourceMapping": {
-              "source": "arn:aws:sqs:us-east-1:000000000000:marking-queue",
+              "source": "arn:aws:sqs:ap-southeast-1:000000000000:marking-queue",
               "batchSize": 10,
-              "enabled": true
+              "enabled": true,
+              "maximumConcurrency": 5
             },
             "lambdaWorkspace": {
               "functionName": "exam-marker",
@@ -1473,13 +1539,15 @@
               "eventSources": [
                 {
                   "type": "sqs",
-                  "arn": "arn:aws:sqs:us-east-1:000000000000:marking-queue",
-                  "batchSize": 10
+                  "arn": "arn:aws:sqs:ap-southeast-1:000000000000:marking-queue",
+                  "batchSize": 10,
+                  "maximumConcurrency": 5
                 }
               ]
             },
             "vpc": "attached to private app subnets A + B (to reach RDS)"
-          }
+          },
+          "notes": "BOTTLENECK FIXED (C7): concurrency capped at 5 so a submit burst cannot exhaust DB connections; jobs wait in SQS."
         },
         "zIndex": 10,
         "measured": {
@@ -1489,7 +1557,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-iam",
@@ -1562,7 +1631,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-secrets",
@@ -1591,7 +1661,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-kms",
@@ -1602,7 +1673,7 @@
         },
         "data": {
           "serviceId": "kms",
-          "label": "KMS (encryption keys)",
+          "label": "KMS (encryption keys, 30-day deletion window)",
           "category": "Security, Identity & Compliance",
           "health": "healthy",
           "az": "Edge / Global",
@@ -1610,7 +1681,12 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "customConfig": {
+            "rotation": "yearly",
+            "deletionWindowDays": 30
+          },
+          "notes": "SPOF reduced (C12): 30-day window to cancel an accidental key deletion."
         },
         "zIndex": 10,
         "measured": {
@@ -1620,7 +1696,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-cloudwatch",
@@ -1631,7 +1708,7 @@
         },
         "data": {
           "serviceId": "cloudwatch",
-          "label": "CloudWatch (logs + alarms)",
+          "label": "CloudWatch (logs 30 days + alarms)",
           "category": "Management & Governance",
           "health": "healthy",
           "az": "Edge / Global",
@@ -1641,11 +1718,13 @@
           "width": 140,
           "height": 98,
           "customConfig": {
+            "logRetentionDays": 30,
             "alarms": [
               "5xx errors",
-              "slow responses",
-              "queue backlog",
-              "RDS CPU"
+              "p95 latency > 1 s",
+              "queue backlog > 60 s",
+              "RDS CPU > 80%",
+              "RDS connections"
             ]
           }
         },
@@ -1657,7 +1736,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-backup",
@@ -1668,7 +1748,7 @@
         },
         "data": {
           "serviceId": "backup",
-          "label": "AWS Backup (keep 5 years)",
+          "label": "AWS Backup (daily 35 d + monthly 5 y)",
           "category": "Storage",
           "health": "healthy",
           "az": "Edge / Global",
@@ -1676,7 +1756,15 @@
           "replicas": 1,
           "multiAz": false,
           "width": 140,
-          "height": 98
+          "height": 98,
+          "customConfig": {
+            "rules": [
+              "daily, keep 35 days",
+              "monthly, keep 5 years (1,825 days)"
+            ],
+            "vaultEncryption": "KMS"
+          },
+          "notes": "C9: 60 snapshots instead of 1,825 - same 5-year retention, far cheaper."
         },
         "zIndex": 10,
         "measured": {
@@ -1686,7 +1774,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-cicd",
@@ -1714,7 +1803,8 @@
               "deploy ECS",
               "upload frontend to S3"
             ]
-          }
+          },
+          "notes": "SPOF ACCEPTED: if GitHub is down we cannot deploy, but running tasks are not affected."
         },
         "zIndex": 10,
         "measured": {
@@ -1724,7 +1814,8 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
       },
       {
         "id": "node-ecr",
@@ -1753,7 +1844,153 @@
         "style": {
           "width": 140,
           "height": 98
-        }
+        },
+        "selected": false
+      },
+      {
+        "id": "node-rds-proxy",
+        "type": "serviceNode",
+        "position": {
+          "x": 380,
+          "y": 605
+        },
+        "data": {
+          "serviceId": "rds_proxy",
+          "label": "RDS Proxy (connection pooling, C6)",
+          "category": "Databases",
+          "health": "healthy",
+          "az": "AZ-A",
+          "subnet": "private",
+          "replicas": 1,
+          "multiAz": true,
+          "customConfig": {
+            "operationLab": {
+              "action": "Connect",
+              "resource": {
+                "engineFamily": "POSTGRESQL",
+                "port": 5432,
+                "status": "available",
+                "credentialsValid": true,
+                "secretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                "secretsManagerSecretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                "secretConnected": true,
+                "auth": [
+                  {
+                    "authScheme": "SECRETS",
+                    "AuthScheme": "SECRETS",
+                    "secretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                    "SecretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                    "iamAuth": "DISABLED",
+                    "IAMAuth": "DISABLED"
+                  }
+                ],
+                "Auth": [
+                  {
+                    "authScheme": "SECRETS",
+                    "AuthScheme": "SECRETS",
+                    "secretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                    "SecretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                    "iamAuth": "DISABLED",
+                    "IAMAuth": "DISABLED"
+                  }
+                ],
+                "roleArn": "arn:aws:iam::000000000000:role/yonten-rds-proxy-role",
+                "RoleArn": "arn:aws:iam::000000000000:role/yonten-rds-proxy-role",
+                "requireTLS": true,
+                "RequireTLS": true,
+                "targetDbInstance": "yonten-db",
+                "vpcSubnetIds": [
+                  "sn-db-a",
+                  "sn-db-b"
+                ]
+              },
+              "request": {}
+            },
+            "proxy": {
+              "engineFamily": "POSTGRESQL",
+              "targets": "yonten-db (Multi-AZ)",
+              "maxConnectionsPercent": 80,
+              "idleClientTimeout": "1800 s",
+              "requireTLS": true,
+              "auth": [
+                {
+                  "authScheme": "SECRETS",
+                  "AuthScheme": "SECRETS",
+                  "secretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                  "SecretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+                  "iamAuth": "DISABLED",
+                  "IAMAuth": "DISABLED"
+                }
+              ],
+              "subnets": "private DB subnets A + B",
+              "secretArn": "arn:aws:secretsmanager:ap-southeast-1:000000000000:secret:rds!db-yonten-db",
+              "roleArn": "arn:aws:iam::000000000000:role/yonten-rds-proxy-role"
+            },
+            "executionRole": {
+              "name": "yonten-rds-proxy-role",
+              "trust": "rds.amazonaws.com",
+              "actions": [
+                "secretsmanager:GetSecretValue",
+                "kms:Decrypt"
+              ]
+            },
+            "iamPermissions": [
+              "secretsmanager:GetSecretValue",
+              "kms:Decrypt"
+            ],
+            "permissions": [
+              "secretsmanager:GetSecretValue",
+              "kms:Decrypt"
+            ]
+          },
+          "width": 140,
+          "height": 98,
+          "securityGroupIds": [
+            "sg-db"
+          ],
+          "notes": "BOTTLENECK FIXED (C6): API tasks and marker Lambda share a small pool of DB connections instead of one new TLS connection per request. Managed and multi-AZ; on RDS failover it holds client connections and reconnects to the new primary (faster recovery)."
+        },
+        "zIndex": 10,
+        "measured": {
+          "width": 140,
+          "height": 98
+        },
+        "style": {
+          "width": 140,
+          "height": 98
+        },
+        "selected": false
+      },
+      {
+        "id": "node-sns",
+        "type": "serviceNode",
+        "position": {
+          "x": 1540,
+          "y": 420
+        },
+        "data": {
+          "serviceId": "sns",
+          "label": "SNS alerts (email ops team)",
+          "category": "Integration & Messaging",
+          "health": "healthy",
+          "az": "Edge / Global",
+          "subnet": "global",
+          "replicas": 1,
+          "multiAz": false,
+          "width": 140,
+          "height": 98,
+          "notes": "CloudWatch alarms publish here; ops team gets an email (5xx, latency, RDS CPU/connections, SQS backlog)."
+        },
+        "zIndex": 10,
+        "measured": {
+          "width": 140,
+          "height": 98
+        },
+        "style": {
+          "width": 140,
+          "height": 98
+        },
+        "selected": false
       }
     ],
     "edges": [
@@ -1807,30 +2044,6 @@
       },
       {
         "zIndex": 1000,
-        "source": "node-cloudfront",
-        "sourceHandle": "source-right",
-        "target": "node-alb-a",
-        "targetHandle": "target-left",
-        "id": "edge-node-cloudfront-node-alb-a",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "request",
-          "protocol": "HTTPS",
-          "transport": "HTTPS",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": true,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "3. WAF checks request; /api/* goes to the load balancer"
-        }
-      },
-      {
-        "zIndex": 1000,
         "source": "node-alb-a",
         "sourceHandle": "source-right",
         "target": "node-ecs-a",
@@ -1850,58 +2063,8 @@
           "isCriticalDependency": true,
           "timeoutMs": 2500,
           "isFailing": false,
-          "description": "4. Load balancer sends it to a healthy API task",
+          "description": "5. Load balancer sends it to a healthy API task",
           "destinationPort": 8080
-        }
-      },
-      {
-        "zIndex": 1000,
-        "source": "node-ecs-a",
-        "sourceHandle": "source-right",
-        "target": "node-rds-a",
-        "targetHandle": "target-left",
-        "id": "edge-node-ecs-a-node-rds-a",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "dependency",
-          "protocol": "SQL",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": true,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "5. API saves the answers in the database",
-          "destinationPort": 5432,
-          "traversal": "dependency",
-          "dependencyRequired": true
-        }
-      },
-      {
-        "zIndex": 1000,
-        "source": "node-cloudfront",
-        "sourceHandle": "source-right",
-        "target": "node-alb-b",
-        "targetHandle": "target-left",
-        "id": "edge-node-cloudfront-node-alb-b",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "request",
-          "protocol": "HTTPS",
-          "transport": "HTTPS",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": true,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "AZ-a down: traffic goes to the load balancer in AZ-b"
         }
       },
       {
@@ -1927,32 +2090,6 @@
           "isFailing": false,
           "description": "API task in AZ-b",
           "destinationPort": 8080
-        }
-      },
-      {
-        "zIndex": 1000,
-        "source": "node-ecs-b",
-        "sourceHandle": "source-right",
-        "target": "node-rds-b",
-        "targetHandle": "target-left",
-        "id": "edge-node-ecs-b-node-rds-b",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "dependency",
-          "protocol": "SQL",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": true,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "Standby has become the primary after failover",
-          "destinationPort": 5432,
-          "traversal": "dependency",
-          "dependencyRequired": true
         }
       },
       {
@@ -2103,30 +2240,6 @@
         "zIndex": 1000,
         "source": "node-cloudfront",
         "sourceHandle": "source-right",
-        "target": "node-waf",
-        "targetHandle": "target-left",
-        "id": "edge-node-cloudfront-node-waf",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "dependency",
-          "protocol": "HTTPS",
-          "transport": "HTTPS",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": false,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "WAF attached to CloudFront"
-        }
-      },
-      {
-        "zIndex": 1000,
-        "source": "node-cloudfront",
-        "sourceHandle": "source-right",
         "target": "node-s3-web",
         "targetHandle": "target-left",
         "id": "edge-node-cloudfront-node-s3-web",
@@ -2218,33 +2331,7 @@
           "isCriticalDependency": false,
           "timeoutMs": 2500,
           "isFailing": false,
-          "description": "Queue triggers the auto-marker"
-        }
-      },
-      {
-        "zIndex": 1000,
-        "source": "node-lambda-mark",
-        "sourceHandle": "source-right",
-        "target": "node-rds-a",
-        "targetHandle": "target-left",
-        "id": "edge-node-lambda-mark-node-rds-a",
-        "type": "custom",
-        "markerEnd": {
-          "type": "arrowclosed",
-          "color": "#94A3B8"
-        },
-        "data": {
-          "relationship": "dependency",
-          "protocol": "SQL",
-          "lineStyle": "straight",
-          "interactionType": "synchronous",
-          "isCriticalDependency": false,
-          "timeoutMs": 2500,
-          "isFailing": false,
-          "description": "Save MCQ scores",
-          "destinationPort": 5432,
-          "traversal": "dependency",
-          "dependencyRequired": false
+          "description": "Marker polls the queue, max 5 at once (C7)"
         }
       },
       {
@@ -2606,6 +2693,259 @@
           "isFailing": false,
           "description": "ECS pulls the image"
         }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-cloudfront",
+        "sourceHandle": "source-right",
+        "target": "node-waf",
+        "targetHandle": "target-left",
+        "id": "edge-node-cloudfront-node-waf",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "request",
+          "protocol": "HTTPS",
+          "transport": "HTTPS",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "3. CloudFront passes /api/* to WAF before the origin",
+          "destinationPort": 8080
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-waf",
+        "sourceHandle": "source-right",
+        "target": "node-alb-a",
+        "targetHandle": "target-left",
+        "id": "edge-node-waf-node-alb-a",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "request",
+          "protocol": "HTTPS",
+          "transport": "HTTPS",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "4. WAF: campus IP set allowed, exempt from rate limit (C8) -> load balancer",
+          "destinationPort": 8080
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-waf",
+        "sourceHandle": "source-right",
+        "target": "node-alb-b",
+        "targetHandle": "target-left",
+        "id": "edge-node-waf-node-alb-b",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "request",
+          "protocol": "HTTPS",
+          "transport": "HTTPS",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "AZ-a down: WAF-approved traffic goes to the load balancer in AZ-b",
+          "destinationPort": 8080
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-ecs-a",
+        "sourceHandle": "source-right",
+        "target": "node-rds-proxy",
+        "targetHandle": "target-left",
+        "id": "edge-node-ecs-a-node-rds-proxy",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "SQL",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "6. API borrows a pooled connection from RDS Proxy (C6)",
+          "destinationPort": 5432,
+          "traversal": "dependency",
+          "dependencyRequired": true
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-ecs-b",
+        "sourceHandle": "source-right",
+        "target": "node-rds-proxy",
+        "targetHandle": "target-left",
+        "id": "edge-node-ecs-b-node-rds-proxy",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "SQL",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "6. API (AZ-b) uses the same RDS Proxy endpoint (C6)",
+          "destinationPort": 5432,
+          "traversal": "dependency",
+          "dependencyRequired": true
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-rds-proxy",
+        "sourceHandle": "source-right",
+        "target": "node-rds-a",
+        "targetHandle": "target-left",
+        "id": "edge-node-rds-proxy-node-rds-a",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "SQL",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": true,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "7. Proxy sends the write to the RDS primary",
+          "destinationPort": 5432,
+          "traversal": "dependency",
+          "dependencyRequired": true
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-rds-proxy",
+        "sourceHandle": "source-right",
+        "target": "node-rds-b",
+        "targetHandle": "target-left",
+        "id": "edge-node-rds-proxy-node-rds-b",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "SQL",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": false,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "After failover the standby is promoted; Proxy reconnects to it",
+          "destinationPort": 5432,
+          "traversal": "dependency",
+          "dependencyRequired": false
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-lambda-mark",
+        "sourceHandle": "source-right",
+        "target": "node-rds-proxy",
+        "targetHandle": "target-left",
+        "id": "edge-node-lambda-mark-node-rds-proxy",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "SQL",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": false,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "Save MCQ scores through the proxy (max 5 Lambdas, C7)",
+          "destinationPort": 5432,
+          "traversal": "dependency",
+          "dependencyRequired": false
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-cloudwatch",
+        "sourceHandle": "source-right",
+        "target": "node-sns",
+        "targetHandle": "target-left",
+        "id": "edge-node-cloudwatch-node-sns",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "HTTPS",
+          "transport": "HTTPS",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": false,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "Alarm -> SNS -> ops email"
+        }
+      },
+      {
+        "zIndex": 1000,
+        "source": "node-rds-proxy",
+        "sourceHandle": "source-right",
+        "target": "node-secrets",
+        "targetHandle": "target-left",
+        "id": "edge-node-rds-proxy-node-secrets",
+        "type": "custom",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#94A3B8"
+        },
+        "data": {
+          "relationship": "dependency",
+          "protocol": "HTTPS",
+          "transport": "HTTPS",
+          "lineStyle": "straight",
+          "interactionType": "synchronous",
+          "isCriticalDependency": false,
+          "timeoutMs": 2500,
+          "isFailing": false,
+          "description": "Proxy reads the DB credentials"
+        }
       }
     ],
     "scenario": {
@@ -2621,7 +2961,7 @@
     "activeLabReference": null,
     "activeChallengeId": null,
     "challengeResult": null,
-    "appMode": "design",
+    "appMode": "simulate",
     "selectedNodeId": null,
     "selectedEdgeId": null,
     "activeStepIndex": null,
@@ -2629,9 +2969,9 @@
     "highlightTaskFlow": true,
     "showNaclSideColumn": false,
     "viewport": {
-      "x": 560,
-      "y": 90,
-      "zoom": 0.4
+      "x": 292.317674399061,
+      "y": 35.749573648860746,
+      "zoom": 0.385839273833656
     }
   }
 }
